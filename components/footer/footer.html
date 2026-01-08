@@ -21,6 +21,10 @@
     <!-- common style end -->
 </head>
 <style>
+
+
+/*  */
+
     .site-footer .site-footer__container {
         padding: 50px 100px;
         display: flex;
@@ -47,6 +51,7 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+        text-align: center;
     }
 
     .site-footer .site-footer__main {
@@ -64,6 +69,7 @@
         object-fit: contain;
     }
 
+
     .site-footer__title {
         color: #5F5F5F;
         font-family: Poppins;
@@ -76,8 +82,11 @@
     }
 
     .site-footer .site-footer__brands {
+        list-style-type: none;
         display: flex;
         justify-content: space-between;
+        margin-bottom: 0;
+        padding-left: 0;
     }
 
     .site-footer__description {
@@ -97,18 +106,42 @@
     }
 
     @media (max-width: 600px) {
-        .site-footer .site-footer__container{
+        .site-footer .site-footer__container {
             padding: 20px;
         }
 
-        .site-footer .site-footer__main{
+        .site-footer .site-footer__main {
+            gap:20px;
             flex-direction: column-reverse;
         }
 
-        .site-footer  .site-footer__menu{
+        .site-footer .site-footer__menu {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 0;
+            width: 100%;
+        }
+
+        .site-footer__description{
+            line-height: 150%; 
+        }
+
+        .site-footer__title{
+            line-height: 150%;
+            width: 228px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .site-footer .site-footer__brands{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .site-footer .site-footer__brands img{
+            display: block;
+            margin: 0 auto;
         }
     }
 </style>
@@ -119,7 +152,7 @@
 
             <div class="site-footer__main">
                 <div class="site-footer__logo">
-                    <img src="../../assests/images/lucozade-logo.png" alt="">
+                    <img src="../../assets/images/lucozade-logo.png" alt="">
                 </div>
                 <ul class="site-footer__menu">
                     <li class="site-footer__item">CONTACT US</li>
@@ -132,37 +165,66 @@
 
             <div class="site-footer__partners">
                 <h3 class="site-footer__title">Lucozade Sport is proud to work with the following partners:</h3>
-                <div class="site-footer__brands">
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    <span>
-                        <img src="../../assests/images/logo_the_fa_new.png" alt="">
-                        <img src="../../assests/images/tcslm.png" alt="">
-                        <img src="../../assests/images/liverpool_f.c.-logo_brandlogos.net_vr9dx 1.png" alt="">
-                        <img src="../../assests/images/logo_powerleagure.png" alt="">
-                        <img src="../../assests/images/logo_goals.png" alt="">
-                    </span>
-                    <span>
-                        <img src="../../assests/images/AFC_Bournemouth_(2013).svg 1.png" alt="">
-                        <img src="../../assests/images/Brentford_FC_crest.svg 1.png" alt="">
-                        <img src="../../assests/images/Brighton_and_Hove_Albion_FC_crest.svg 1.png" alt="">
-                        <img src="../../assests/images/Logo_Sunderland.svg 1.png" alt="">
-                        <img src="../../assests/images/Norwich_City_FC_logo.svg 1.png" alt="">
-                        <img src="../../assests/images/Sheffield_United_FC_logo.svg 1.png" alt="">
-                        <img src="../../assests/images/FC_Southampton.svg 1.png" alt="">
-                        <img src="../../assests/images/Rangers_FC.svg 1.png" alt="">
-                    </span>
-                </div>
+
+                <div>
+                <ul class="site-footer__brands">
+                    <li class="site-footer__brand">
+                        <img src="../../assets/images/logo_the_fa_new.png" alt="The FA">
+                    </li>
+
+                    <li class="site-footer__brand">
+                        <img src="../../assets/images/tcslm.png" alt="TCS London Marathon">
+                    </li>
+
+                    <li class="site-footer__brand">
+                        <img src="../../assets/images/liverpool_f.c.-logo_brandlogos.net_vr9dx%201.png"
+                            alt="Liverpool FC">
+                    </li>
+
+                    <li class="site-footer__brand">
+                        <img src="../../assets/images/logo_powerleagure.png" alt="Powerleague">
+                    </li>
+
+                    <li class="site-footer__brand">
+                        <img src="../../assets/images/logo_goals.png" alt="Goals">
+                    </li> 
+
+                    <li class="site-footer__brand">
+                        <img src="../../assets/images/AFC_Bournemouth_(2013).svg%201.png" alt="AFC Bournemouth">
+                    </li>
+
+                    <li class="site-footer__brand">
+                        <img src="../../assets/images/Brentford_FC_crest.svg%201.png" alt="Brentford FC">
+                    </li>
+
+                    <li class="site-footer__brand">
+                        <img src="../../assets/images/Brighton_and_Hove_Albion_FC_crest.svg%201.png"
+                            alt="Brighton & Hove Albion">
+                    </li>
+
+                    <li class="site-footer__brand">
+                        <img src="../../assets/images/Logo_Sunderland.svg%201.png" alt="Sunderland AFC">
+                    </li>
+
+                    <li class="site-footer__brand">
+                        <img src="../../assets/images/Norwich_City_FC_logo.svg%201.png" alt="Norwich City FC">
+                    </li>
+
+                    <li class="site-footer__brand">
+                        <img src="../../assets/images/Sheffield_United_FC_logo.svg%201.png" alt="Sheffield United FC">
+                    </li>
+
+                    <li class="site-footer__brand">
+                        <img src="../../assets/images/FC_Southampton.svg%201.png" alt="Southampton FC">
+                    </li>
+
+                    <li class="site-footer__brand">
+                        <img src="../../assets/images/Rangers_FC.svg%201.png" alt="Rangers FC">
+                    </li>
+                </ul>
+
+                
+
             </div>
             <p class="site-footer__description">©Lucozade Ribena Suntory Limited, 2025 All rights reserved. LUCOZADE,
                 the LUCOZADE ranges, and the Arc Device are registered trade marks of Lucozade Ribena Suntory Limited.
