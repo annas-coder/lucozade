@@ -1,3 +1,118 @@
+/* Zuume Cut Font Face Declarations */
+@font-face {
+  font-family: "Zuume Cut";
+  src: url("../fonts/zuume-cut/zuume-cut-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Zuume Cut";
+  src: url("../fonts/zuume-cut/zuume-cut-italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Zuume Cut";
+  src: url("../fonts/zuume-cut/zuume-cut-light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Zuume Cut";
+  src: url("../fonts/zuume-cut/zuume-cut-light-italic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Zuume Cut";
+  src: url("../fonts/zuume-cut/zuume-cut-bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Zuume Cut";
+  src: url("../fonts/zuume-cut/zuume-cut-bold-italic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Zuume Cut";
+  src: url("../fonts/zuume-cut/zuume-cut-black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Zuume Cut";
+  src: url("../fonts/zuume-cut/zuume-cut-black-italic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Zuume Cut Utility Classes */
+.zuume-cut-light {
+  font-family: "Zuume Cut", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.zuume-cut-light-italic {
+  font-family: "Zuume Cut", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.zuume-cut-regular {
+  font-family: "Zuume Cut", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.zuume-cut-italic {
+  font-family: "Zuume Cut", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.zuume-cut-bold {
+  font-family: "Zuume Cut", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.zuume-cut-bold-italic {
+  font-family: "Zuume Cut", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.zuume-cut-black {
+  font-family: "Zuume Cut", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.zuume-cut-black-italic {
+  font-family: "Zuume Cut", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Poppins Utility Classes */
 .poppins-thin {
   font-family: "Poppins", sans-serif;
   font-weight: 100;

@@ -1,0 +1,509 @@
+/* Homepage Styles */
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    width: 100%;
+}
+
+.hero-banner {
+    background: linear-gradient(90deg, #FF1400 0%, #FF7900 63.47%);
+    height: 50px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-banner__text {
+    color: #F8D905;
+    text-align: center;
+    font-family: "Zuume Cut";
+    font-size: 90px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 54px;
+    margin: 0;
+}
+
+.hero-image {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-image__placeholder {
+    width: 100%;
+    height: 600px;
+    background-image: url("../images/video.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Abstract Pattern Section */
+.pattern-section {
+    width: 100%;
+    height: 220px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    position: relative;
+    background-image: url("../images/pattern-overlay.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pattern-section::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(90deg, #008CDC 0%, #00E6FF 100%);;
+}
+
+
+/* Product Ranges Section */
+.ranges-section {
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: linear-gradient(105deg, #FF1400 9.79%, #FF7900 68.5%);
+    padding: 48px 0 88px;
+}
+
+.ranges-section__title {
+    color: #F8D905;
+    text-align: left;
+    font-family: "Zuume Cut";
+    font-size: 128px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0px;
+    position: relative;
+    top: 48px;
+}
+
+
+.range-section__card{
+    width: 400px;
+    height: 400px;
+    aspect-ratio: 1/1;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.lucozade-energy.range-section__card{
+    background-image: url("../images/Lucozade_Functional Texture_Energy_2_RGB 1.png");
+}
+
+.lucozade-energy.range-section__card::after{
+    background-image: url("../images/Group 25.png");
+}
+
+.lucozade-energy.range-section__card::before{
+    background-color: red;
+}
+
+.lucozade-energy .range-section__card-content{
+    background-image: url("../images/Angled high-res spritzed_Energy Orange 500ml pack shot 1.png");
+}
+
+/* lucozade-sport */
+
+.lucozade-sport.range-section__card{
+    background-image: url("../images/Lucozade_Functional Texture_Sport_2_RGB 1.png");
+}
+
+.lucozade-sport.range-section__card::after{
+    background-image: url("../images/Group 25.png");
+}
+
+.lucozade-sport.range-section__card::before{
+    background-image: linear-gradient(311deg, #321EAA 40.67%, #015FFF 92.96%);
+}
+
+.lucozade-sport .range-section__card-content{
+    background-image: url("../images/LucozadeSport_Orange_500mlBottle_Front_CORE CON 1.png");
+}
+
+
+/* lucozade-alert */
+
+.lucozade-alert.range-section__card{
+    background-image: url("../images/ALERT\ KV.webp");
+}
+
+.lucozade-alert.range-section__card::after{
+    background-image: url("../images/Group 25.png");
+}
+
+.lucozade-alert.range-section__card::before{
+    background-color: #000;
+}
+
+.lucozade-alert .range-section__card-content{
+    background-image: url("../images/lucozade_alert-orignal\ 1.png");
+}
+
+
+
+
+
+.range-section__card::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.range-section__card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 44%;
+    clip-path:  polygon(
+        0 0,      
+        95% 0,  
+        0% 180%,
+        0px 100%    
+    );
+    background-repeat: no-repeat;
+}
+
+.range-section__card-content{
+    position: absolute;
+    z-index: 1;
+    color: #F8D905;
+    font-family: "Zuume Cut";
+    font-size: 80px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    height: 100%;
+    width: 100%;
+    float: right;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    text-align: right; 
+    left: auto; 
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-right: 30px;
+}
+
+.range-card__pattern {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    background-image: 
+        repeating-linear-gradient(60deg, transparent, transparent 35px, rgba(255,255,255,0.3) 35px, rgba(255,255,255,0.3) 70px),
+        repeating-linear-gradient(120deg, transparent, transparent 35px, rgba(255,255,255,0.3) 35px, rgba(255,255,255,0.3) 70px);
+    background-size: 70px 70px;
+}
+
+.range-card__image {
+    width: 60%;
+    max-width: 250px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+    margin-bottom: 20px;
+}
+
+.range-card__image-placeholder {
+    width: 60%;
+    max-width: 250px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 20px;
+}
+
+.range-card__energy-lines {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.4;
+}
+
+.range-card__energy-lines::before,
+.range-card__energy-lines::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 3px solid #FFD700;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.range-card__energy-lines::before {
+    animation: pulse 3s ease-in-out infinite;
+}
+
+.range-card__energy-lines::after {
+    animation: pulse 3s ease-in-out infinite 1.5s;
+    width: 150px;
+    height: 150px;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.4; }
+    50% { transform: translate(-50%, -50%) scale(1.2); opacity: 0.8; }
+}
+
+.range-card__title {
+    color: #FFD700;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3),
+                 5px 5px 10px rgba(0, 0, 0, 0.4),
+                 2px 2px 0px rgba(255, 215, 0, 0.5);
+    position: relative;
+    z-index: 2;
+    margin: 0;
+}
+
+/* Call to Action Section */
+.cta-section {
+    background: linear-gradient(100deg, #A30006 1.04%, #F00 63.17%);
+    padding: 80px 0px;
+    width: 100%;
+}
+
+.cta-section__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta-section__text {
+    color: #F8D905;
+    font-family: "Zuume Cut";
+    font-size: 100px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 86%; 
+    margin-bottom: 0;
+}
+
+.cta-section__icons {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.cta-section__icons img{
+    width: 100%;
+}
+
+.cta-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+.cta-icon svg {
+    width: 28px;
+    height: 28px;
+    fill: #FF1400;
+    transition: fill 0.3s ease;
+}
+
+.cta-icon:hover svg {
+    fill: #FF1400;
+}
+
+.cta-icon--email svg {
+    fill: #FF1400;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .ranges-section {
+        padding: 60px 40px;
+    }
+
+    .ranges-section__title {
+        font-size: 48px;
+    }
+
+    .range-card__title {
+        font-size: 36px;
+    }
+
+    .cta-section {
+        padding: 60px 40px;
+    }
+
+    .cta-section__text {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-banner__text {
+        font-size: 32px;
+    }
+
+    .hero-image,
+    .hero-image__placeholder {
+        height: 400px;
+    }
+
+    .pattern-section {
+        height: 80px;
+    }
+
+    .ranges-section {
+        padding: 40px 20px;
+    }
+
+    .ranges-section__title {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+
+    .ranges-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .range-card {
+        aspect-ratio: 16/9;
+        padding: 30px 15px;
+    }
+
+    .range-card__title {
+        font-size: 32px;
+    }
+
+    .cta-section {
+        padding: 60px 0px;
+    }
+
+    .cta-section__text {
+        font-size: 32px;
+    }
+
+    .cta-section__icons {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-banner__text {
+        font-size: 24px;
+        padding: 10px 0;
+    }
+
+    .hero-image,
+    .hero-image__placeholder {
+        height: 300px;
+    }
+
+    .pattern-section {
+        height: 60px;
+    }
+
+    .ranges-section {
+        padding: 40px 0px;
+    }
+
+    .ranges-section__title {
+        margin-bottom: 20px;
+    }
+
+    .range-card__title {
+        font-size: 28px;
+    }
+
+    .cta-section__text {
+        font-size: 50px;
+        line-height: 85%
+    }
+
+    .cta-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .cta-icon svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    .ranges-section__title{
+        text-align: center;
+        top: 0;
+        font-size: 65px;
+    }
+
+    .hero-banner__text{
+        padding: 0;
+        font-size: 65px;
+    }
+
+    .hero-banner{
+        height: 45px;
+    }
+
+    .range-section__card{
+        width: 100%;
+    }
+
+    .range-section__card::before{
+        width: 49%;
+    }
+
+    .range-section__card-content{
+        padding-right: 20px;
+    }
+
+    .lucozade-energy .range-section__card-content,
+    .lucozade-sport .range-section__card-content,
+    .lucozade-alert .range-section__card-content{
+        background-position: center bottom;
+    }
+
+    .cta-section__row{
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
