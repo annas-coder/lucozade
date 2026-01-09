@@ -61,6 +61,7 @@
 
 /* ===== Product Ranges Section Start ===== */
 .ranges-section {
+    position: relative;
     border-radius: 2px;
     border: 1px solid rgba(0, 0, 0, 0.10);
     background: linear-gradient(105deg, #FF1400 9.79%, #FF7900 68.5%);
