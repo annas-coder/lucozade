@@ -1,6 +1,6 @@
 /* Homepage Styles */
 
-/* Hero Section */
+/* ===== Hero Section Start ===== */
 .hero-section {
     position: relative;
     width: 100%;
@@ -25,23 +25,17 @@
     margin: 0;
 }
 
-.hero-image {
-    width: 100%;
-    height: 600px;
-    object-fit: cover;
-    display: block;
-}
-
 .hero-image__placeholder {
     width: 100%;
     height: 600px;
-    background-image: url("../images/video.png");
+    background-image: url("../images/hero-background.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
+/* ===== Hero Section End ===== */
 
-/* Abstract Pattern Section */
+/* ===== Pattern Section Start ===== */
 .pattern-section {
     width: 100%;
     height: 220px;
@@ -63,9 +57,9 @@
     z-index: -1;
     background: linear-gradient(90deg, #008CDC 0%, #00E6FF 100%);;
 }
+/* ===== Pattern Section End ===== */
 
-
-/* Product Ranges Section */
+/* ===== Product Ranges Section Start ===== */
 .ranges-section {
     border-radius: 2px;
     border: 1px solid rgba(0, 0, 0, 0.10);
@@ -86,7 +80,6 @@
     top: 48px;
 }
 
-
 .range-section__card{
     width: 400px;
     height: 400px;
@@ -100,11 +93,11 @@
 }
 
 .lucozade-energy.range-section__card{
-    background-image: url("../images/Lucozade_Functional Texture_Energy_2_RGB 1.png");
+    background-image: url("../images/ranges-energy-background.png");
 }
 
 .lucozade-energy.range-section__card::after{
-    background-image: url("../images/Group 25.png");
+    background-image: url("../images/ranges-pattern-overlay.png");
 }
 
 .lucozade-energy.range-section__card::before{
@@ -112,17 +105,15 @@
 }
 
 .lucozade-energy .range-section__card-content{
-    background-image: url("../images/Angled high-res spritzed_Energy Orange 500ml pack shot 1.png");
+    background-image: url("../images/ranges-energy-product.png");
 }
 
-/* lucozade-sport */
-
 .lucozade-sport.range-section__card{
-    background-image: url("../images/Lucozade_Functional Texture_Sport_2_RGB 1.png");
+    background-image: url("../images/ranges-sport-background.png");
 }
 
 .lucozade-sport.range-section__card::after{
-    background-image: url("../images/Group 25.png");
+    background-image: url("../images/ranges-pattern-overlay.png");
 }
 
 .lucozade-sport.range-section__card::before{
@@ -130,18 +121,15 @@
 }
 
 .lucozade-sport .range-section__card-content{
-    background-image: url("../images/LucozadeSport_Orange_500mlBottle_Front_CORE CON 1.png");
+    background-image: url("../images/ranges-sport-product.png");
 }
 
-
-/* lucozade-alert */
-
 .lucozade-alert.range-section__card{
-    background-image: url("../images/ALERT\ KV.webp");
+    background-image: url("../images/ranges-alert-background.webp");
 }
 
 .lucozade-alert.range-section__card::after{
-    background-image: url("../images/Group 25.png");
+    background-image: url("../images/ranges-pattern-overlay.png");
 }
 
 .lucozade-alert.range-section__card::before{
@@ -149,12 +137,8 @@
 }
 
 .lucozade-alert .range-section__card-content{
-    background-image: url("../images/lucozade_alert-orignal\ 1.png");
+    background-image: url("../images/ranges-alert-product.png");
 }
-
-
-
-
 
 .range-section__card::after{
     content: "";
@@ -203,98 +187,9 @@
     background-size: contain;
     padding-right: 30px;
 }
+/* ===== Product Ranges Section End ===== */
 
-.range-card__pattern {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0.1;
-    background-image: 
-        repeating-linear-gradient(60deg, transparent, transparent 35px, rgba(255,255,255,0.3) 35px, rgba(255,255,255,0.3) 70px),
-        repeating-linear-gradient(120deg, transparent, transparent 35px, rgba(255,255,255,0.3) 35px, rgba(255,255,255,0.3) 70px);
-    background-size: 70px 70px;
-}
-
-.range-card__image {
-    width: 60%;
-    max-width: 250px;
-    height: auto;
-    position: relative;
-    z-index: 2;
-    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
-    margin-bottom: 20px;
-}
-
-.range-card__image-placeholder {
-    width: 60%;
-    max-width: 250px;
-    height: 300px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    position: relative;
-    z-index: 2;
-    margin-bottom: 20px;
-}
-
-.range-card__energy-lines {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0.4;
-}
-
-.range-card__energy-lines::before,
-.range-card__energy-lines::after {
-    content: '';
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border: 3px solid #FFD700;
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.range-card__energy-lines::before {
-    animation: pulse 3s ease-in-out infinite;
-}
-
-.range-card__energy-lines::after {
-    animation: pulse 3s ease-in-out infinite 1.5s;
-    width: 150px;
-    height: 150px;
-}
-
-@keyframes pulse {
-    0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.4; }
-    50% { transform: translate(-50%, -50%) scale(1.2); opacity: 0.8; }
-}
-
-.range-card__title {
-    color: #FFD700;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 900;
-    font-size: 48px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3),
-                 5px 5px 10px rgba(0, 0, 0, 0.4),
-                 2px 2px 0px rgba(255, 215, 0, 0.5);
-    position: relative;
-    z-index: 2;
-    margin: 0;
-}
-
-/* Call to Action Section */
+/* ===== Call to Action Section Start ===== */
 .cta-section {
     background: linear-gradient(100deg, #A30006 1.04%, #F00 63.17%);
     padding: 80px 0px;
@@ -337,7 +232,6 @@
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-
 .cta-icon svg {
     width: 28px;
     height: 28px;
@@ -352,8 +246,9 @@
 .cta-icon--email svg {
     fill: #FF1400;
 }
+/* ===== Call to Action Section End ===== */
 
-/* Responsive Design */
+/* ===== Responsive Design Start ===== */
 @media (max-width: 1024px) {
     .ranges-section {
         padding: 60px 40px;
@@ -361,10 +256,6 @@
 
     .ranges-section__title {
         font-size: 48px;
-    }
-
-    .range-card__title {
-        font-size: 36px;
     }
 
     .cta-section {
@@ -383,6 +274,8 @@
 
     .range-section__card-content{
         background-position: center bottom;
+        font-size: 60px;
+        padding-right: 20px;
     }
 
     .ranges-section__title{
@@ -396,18 +289,9 @@
         font-size: 68px !important;
     }
 
-    .range-section__card-content{
-        font-size: 60px;
-    }
-
-    .range-section__card-content{
-        padding-right: 20px;
-    }
-
     .px-md-0{
         padding-left: 0 !important;
         padding-right: 0 !important;
-
     }
 
     .ranges-section{
@@ -420,7 +304,6 @@
         font-size: 32px;
     }
 
-    .hero-image,
     .hero-image__placeholder {
         height: 400px;
     }
@@ -436,20 +319,6 @@
     .ranges-section__title {
         font-size: 36px;
         margin-bottom: 40px;
-    }
-
-    .ranges-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .range-card {
-        aspect-ratio: 16/9;
-        padding: 30px 15px;
-    }
-
-    .range-card__title {
-        font-size: 32px;
     }
 
     .cta-section {
@@ -471,7 +340,6 @@
         padding: 10px 0;
     }
 
-    .hero-image,
     .hero-image__placeholder {
         height: 300px;
     }
@@ -486,28 +354,6 @@
 
     .ranges-section__title {
         margin-bottom: 20px;
-    }
-
-    .range-card__title {
-        font-size: 28px;
-    }
-
-    .cta-section__text {
-        font-size: 50px;
-        line-height: 85%
-    }
-
-    .cta-icon {
-        width: 32px;
-        height: 32px;
-    }
-
-    .cta-icon svg {
-        width: 22px;
-        height: 22px;
-    }
-
-    .ranges-section__title{
         text-align: center;
         top: 0;
         font-size: 65px;
@@ -536,6 +382,21 @@
         background-position: center bottom;
     }
 
+    .cta-section__text {
+        font-size: 50px;
+        line-height: 85%;
+    }
+
+    .cta-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .cta-icon svg {
+        width: 22px;
+        height: 22px;
+    }
+
     .cta-section__row{
         flex-direction: column;
         gap: 40px;
@@ -552,3 +413,4 @@
         font-size: 60px;
     }
 }
+/* ===== Responsive Design End ===== */
