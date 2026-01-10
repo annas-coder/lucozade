@@ -1,0 +1,246 @@
+/* Shop Page Styles */
+
+/* ===== Page Title Indicator Start ===== */
+.page-title-indicator {
+    padding: 17px 80px 0;
+    background-color: white;
+}
+
+.page-title-indicator__text {
+    color: #9E9E9E;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media (max-width: 600px) {
+    .page-title-indicator {
+        padding: 20px 20px 0;
+    }
+}
+/* ===== Page Title Indicator End ===== */
+
+/* ===== Shop Section Start ===== */
+.shop-section {
+    background: linear-gradient(90deg, #FF1400 0%, #FF7900 100%);
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.shop-section .row {
+    align-items: flex-start;
+}
+
+.shop-section__left {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.shop-section__heading {
+    color: #F8D905;
+    font-family: "Zuume Cut";
+    font-size: 200px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 79%;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 100px 0;
+}
+
+.shop-section__right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.shop-section__text {
+    color: #FFFFFF;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6;
+    padding: 40px 0 ;
+}
+
+.shop-section__text p {
+    margin-bottom: 20px;
+}
+
+.shop-section__text p:last-of-type {
+    margin-bottom: 0;
+}
+
+.shop-section__text--signature {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.shop-section__button {
+    display: block;
+    background-color: #F8D905;
+    color: #000000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    padding: 16px 32px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+    width: fit-content;
+    margin: 30px auto 20px;
+}
+
+.shop-section__button:hover {
+    background-color: #FFE500;
+    transform: translateY(-2px);
+    color: #000000;
+    text-decoration: none;
+}
+
+.shop-section__button:active {
+    transform: translateY(0);
+}
+/* ===== Shop Section End ===== */
+
+/* ===== CTA Section Override for Shop Page Start ===== */
+/* Override CTA section to have solid red background on shop page */
+.shop-section ~ .cta-section {
+    background: #E3061B;
+}
+/* ===== CTA Section Override for Shop Page End ===== */
+
+/* ===== Responsive Design Start ===== */
+@media (min-width: 768px) and (max-width: 1350px) {
+    .shop-section {
+        padding: 60px 40px;
+    }
+
+    .shop-section__heading {
+        font-size: 150px;
+    }
+
+    .shop-section__text {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .shop-section {
+        padding: 60px 40px;
+        min-height: auto;
+    }
+
+    .shop-section__heading {
+        font-size: 120px;
+        text-align: center;
+    }
+
+    .shop-section__left {
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .shop-section__text {
+        text-align: left;
+    }
+
+    .shop-section__button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .shop-section {
+        padding: 40px 20px;
+    }
+
+    .shop-section__heading {
+        font-size: 80px;
+        line-height: 85%;
+        text-align: center;
+    }
+
+    .shop-section__left {
+        justify-content: center;
+    }
+
+    .shop-section__text {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .shop-section__text p {
+        margin-bottom: 15px;
+    }
+
+    .shop-section__button {
+        padding: 14px 28px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .page-title-indicator {
+        padding: 15px 20px 0;
+    }
+
+    .page-title-indicator__text {
+        font-size: 12px;
+    }
+
+    .shop-section {
+        padding: 30px 15px;
+    }
+
+    .shop-section__heading {
+        font-size: 65px;
+        line-height: 79%;
+        text-align: center;
+    }
+
+    .shop-section__left {
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+
+    .shop-section__text {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .shop-section__text p {
+        margin-bottom: 12px;
+    }
+
+    .shop-section__button {
+        padding: 12px 24px;
+        font-size: 13px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 320px) {
+    .shop-section__heading {
+        font-size: 50px;
+    }
+
+    .shop-section__text {
+        font-size: 12px;
+    }
+}
+/* ===== Responsive Design End ===== */
+
