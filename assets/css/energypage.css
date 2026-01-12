@@ -362,7 +362,6 @@
 
     .sport-banner__subtitle {
         font-size: 40px;
-        text-align: center;
         margin-bottom: 30px;
     }
 
@@ -387,7 +386,7 @@
 
     .sport-product-card__content{
         align-content: flex-end;
-        text-align: center;
+        text-align: left;
     }
     
 
@@ -408,11 +407,11 @@
     }
 
     .ranges-banner__word {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .ranges-banner__yellow-section {
-        padding: 20px 0;
+        padding: 16px 0;
     }
 
     .ranges-banner__gradient-section {
@@ -459,7 +458,7 @@
     }
 
     .sport-product-card__description {
-        font-size: 12px;
+        font-size: 18px;
         line-height: 1.5;
     }
 
@@ -480,7 +479,7 @@
     }
     
     .sport-products-section .sport-product-card{
-        height: 300px;
+        height: 400px;
         min-height: 290px;
     }
 }
@@ -490,9 +489,13 @@
 @media (max-width: 1199px) {
     .sport-product-card__image img {
       width: 100%;
-      height: 560px;
+      height: 490px;
       object-fit: cover;
       transform: translateX(-20%) translateY(-8%) rotate(20deg);
+    }
+
+    .sport-range-wrapper::after{
+        display: none;
     }
   }
   
