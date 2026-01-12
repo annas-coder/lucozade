@@ -1,13 +1,20 @@
 /* Energy Page Styles (Sport Range) */
 
 /* ===== Sport Range Wrapper Start ===== */
-.sport-range-wrapper {
+.sport-range-wrapper--energy {
     background: linear-gradient(90deg, #FF1400 0%, #FF7900 100%);
     width: 100%;
     position: relative;
 }
 
-.sport-range-wrapper::after {
+.sport-range-wrapper--sport {
+    background:  linear-gradient(105deg, #008CDC 9.79%, #00F8FF 68.5%);
+    width: 100%;
+    position: relative;
+}
+
+.sport-range-wrapper--energy::after,
+.sport-range-wrapper--sport::after {
     content: "";
     position: absolute;
     top: 0;
@@ -365,7 +372,7 @@
 
     .sport-product-card__content {
         align-content: flex-end;
-        text-align: left;
+        text-align: center;
     }
 
     .sport-product-card__name {
@@ -449,7 +456,8 @@
         left: 0;
     }
 
-    .sport-range-wrapper::after {
+    .sport-range-wrapper--energy::after,
+    .sport-range-wrapper--sport::after {
         display: none;
     }
 
@@ -467,7 +475,8 @@
         transform: translateX(-20%) translateY(-8%) rotate(20deg);
     }
 
-    .sport-range-wrapper::after {
+    .sport-range-wrapper--energy::after,
+    .sport-range-wrapper--sport::after {
         display: none;
     }
 }

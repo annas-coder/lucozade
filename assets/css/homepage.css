@@ -190,65 +190,6 @@
 }
 /* ===== Product Ranges Section End ===== */
 
-/* ===== Call to Action Section Start ===== */
-.cta-section {
-    background: linear-gradient(100deg, #A30006 1.04%, #F00 63.17%);
-    padding: 80px 0px;
-    width: 100%;
-}
-
-.cta-section__row{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.cta-section__text {
-    color: #F8D905;
-    font-family: "Zuume Cut";
-    font-size: 100px;
-    font-style: italic;
-    font-weight: 700;
-    line-height: 86%; 
-    margin-bottom: 0;
-}
-
-.cta-section__icons {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-}
-
-.cta-section__icons img{
-    width: 100%;
-}
-
-.cta-icon {
-    width: 32px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.cta-icon svg {
-    width: 28px;
-    height: 28px;
-    fill: #FF1400;
-    transition: fill 0.3s ease;
-}
-
-.cta-icon:hover svg {
-    fill: #FF1400;
-}
-
-.cta-icon--email svg {
-    fill: #FF1400;
-}
-/* ===== Call to Action Section End ===== */
-
 /* ===== Responsive Design Start ===== */
 @media (max-width: 1024px) {
     .ranges-section {
@@ -257,14 +198,6 @@
 
     .ranges-section__title {
         font-size: 48px;
-    }
-
-    .cta-section {
-        padding: 60px 40px;
-    }
-
-    .cta-section__text {
-        font-size: 42px;
     }
 }
 
@@ -284,7 +217,6 @@
         text-align: center;
     }
 
-    .cta-section__text ,
     .ranges-section__title,
     .hero-banner__text{
         font-size: 68px !important;
@@ -320,18 +252,6 @@
     .ranges-section__title {
         font-size: 36px;
         margin-bottom: 40px;
-    }
-
-    .cta-section {
-        padding: 60px 0px;
-    }
-
-    .cta-section__text {
-        font-size: 32px;
-    }
-
-    .cta-section__icons {
-        gap: 20px;
     }
 }
 
@@ -381,26 +301,6 @@
     .lucozade-sport .range-section__card-content,
     .lucozade-alert .range-section__card-content{
         background-position: center bottom;
-    }
-
-    .cta-section__text {
-        font-size: 50px;
-        line-height: 85%;
-    }
-
-    .cta-icon {
-        width: 32px;
-        height: 32px;
-    }
-
-    .cta-icon svg {
-        width: 22px;
-        height: 22px;
-    }
-
-    .cta-section__row{
-        flex-direction: column;
-        gap: 40px;
     }
 }
 
