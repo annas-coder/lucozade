@@ -13,8 +13,15 @@
     position: relative;
 }
 
+.sport-range-wrapper--alert {
+    background: var(--Alert_BG, linear-gradient(132deg, #AF063F 10.23%, #EC691E 65.45%));
+    width: 100%;
+    position: relative;
+}
+
 .sport-range-wrapper--energy::after,
-.sport-range-wrapper--sport::after {
+.sport-range-wrapper--sport::after ,
+.sport-range-wrapper--alert::after {
     content: "";
     position: absolute;
     top: 0;
@@ -457,7 +464,8 @@
     }
 
     .sport-range-wrapper--energy::after,
-    .sport-range-wrapper--sport::after {
+    .sport-range-wrapper--sport::after,
+    .sport-range-wrapper--alert::after{
         display: none;
     }
 
@@ -476,7 +484,8 @@
     }
 
     .sport-range-wrapper--energy::after,
-    .sport-range-wrapper--sport::after {
+    .sport-range-wrapper--sport::after,
+    .sport-range-wrapper--alert::after {
         display: none;
     }
 }
