@@ -603,3 +603,11 @@
     }
 }
 /* ===== Call to Action Section End ===== */
+
+/* ===== Range Section Card Links Start ===== */
+.range-section__card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+/* ===== Range Section Card Links End ===== */

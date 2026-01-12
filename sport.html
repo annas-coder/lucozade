@@ -30,10 +30,6 @@
     <link rel="stylesheet" href="assets/css/common.css">
     <!-- common style end -->
 
-    <!-- homepage style start -->
-    <link rel="stylesheet" href="assets/css/homepage.css">
-    <!-- homepage style end -->
-
     <!-- energy page style start -->
     <link rel="stylesheet" href="assets/css/energypage.css">
     <!-- energy page style end -->
@@ -46,7 +42,9 @@
         <div class="container px-0">
             <div class="site-navbar">
                 <div class="site-navbar__logo">
-                    <img src="assets/images/header-logo.png" alt="Lucozade">
+                    <a href="index.html">
+                        <img src="assets/images/header-logo.png" alt="Lucozade">
+                    </a>
                     <div class="site-navbar__hamberug-icon" onclick="menuBtnFunction(this)">
                         <span></span>
                     </div>
@@ -70,9 +68,9 @@
             <div class="ranges-banner__yellow-section">
                 <div class="container">
                     <ul class="ranges-banner__text">
-                        <li class="ranges-banner__word">ENERGY</li>
-                        <li class="ranges-banner__word active">SPORT</li>
-                        <li class="ranges-banner__word">ALERT</li>
+                        <li class="ranges-banner__word"><a href="energy.html" class="ranges-banner__link">ENERGY</a></li>
+                        <li class="ranges-banner__word active"><a href="sport.html" class="ranges-banner__link">SPORT</a></li>
+                        <li class="ranges-banner__word"><a href="alert.html" class="ranges-banner__link">ALERT</a></li>
                     </ul>
                 </div>
             </div>
@@ -190,7 +188,57 @@
             </div>
         </div>
         </section>
+
     </div>
+    
+    <!-- Product Selector Section -->
+    <section class="product-selector-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <h2 class="product-selector__title">CHOOSE THE RIGHT LUCOZADE SPORT PRODUCT 
+                    <span class="product-selector__title-span">FOR YOUR ACTIVITY TYPE </span></h2>
+                    <p class="product-selector__instruction">Select an option from each of the below categories to show the recommended product for your activity.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-3">
+                    <!-- <button class="product-selector__button" data-type="intensity" data-value="low">
+                        <span class="border-span">
+                            <img src="assets/images/icon-large-low-intensity.png" alt="Low Intensity" class="product-selector__button-icon">
+                            <span class="product-selector__button-text">LOW-INTENSITY</span>
+                        </span>
+                    </button> -->
+
+                    <div class="product-selector__button">
+                        <span class="product-selector__inner">
+                          Content here
+                        </span>
+                      </div>
+                      
+
+                </div>
+                <div class="col-3">
+                    <button class="product-selector__button" data-type="intensity" data-value="low">
+                        <img src="assets/images/icon-large-low-intensity.png" alt="Low Intensity" class="product-selector__button-icon">
+                        <span class="product-selector__button-text">LOW-INTENSITY</span>
+                    </button>
+                </div>
+                <div class="col-3">
+                    <button class="product-selector__button" data-type="intensity" data-value="low">
+                        <img src="assets/images/icon-large-low-intensity.png" alt="Low Intensity" class="product-selector__button-icon">
+                        <span class="product-selector__button-text">LOW-INTENSITY</span>
+                    </button>
+                </div>
+                <div class="col-3">
+                    <button class="product-selector__button" data-type="intensity" data-value="low">
+                        <img src="assets/images/icon-large-low-intensity.png" alt="Low Intensity" class="product-selector__button-icon">
+                        <span class="product-selector__button-text">LOW-INTENSITY</span>
+                    </button>
+                </div>
+            </div>
+    </section>
 
     <!-- Call to Action Section -->
     <section class="cta-section">
