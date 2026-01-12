@@ -33,3 +33,29 @@
     display: block;
     margin-left: 45px;
 }
+
+@media (max-width: 600px) {
+
+    .ranges-section__heading{
+        color: #F8D905;
+        font-family: "Zuume Cut";
+        font-size: 80px;
+        font-style: italic;
+        font-weight: 700;
+        line-height: 70px; /* 87.5% */
+    }
+
+    .ranges-section__heading{
+        position: relative;
+        top: 0;
+    }
+
+    .ranges-section::after{
+        width: 650px;
+    }
+
+    .ranges-section::after{
+        display: none;
+    }
+
+}
