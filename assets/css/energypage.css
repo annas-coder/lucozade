@@ -1,0 +1,324 @@
+/* Energy Page Styles (Sport Range) */
+
+/* ===== Sport Range Wrapper Start ===== */
+.sport-range-wrapper {
+    background: linear-gradient(90deg, #FF1400 0%, #FF7900 100%);
+    width: 100%;
+}
+/* ===== Sport Range Wrapper End ===== */
+
+/* ===== Banner Section Start ===== */
+.sport-banner-section {
+    width: 100%;
+    /* min-height: 600px; */
+    display: flex;
+    align-items: center;
+    padding: 100px 0px;
+}
+
+.sport-banner__title {
+    color: #F8D905;
+    font-family: "Zuume Cut";
+    font-size: 128px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 110px;
+    margin-bottom: 0;
+}
+
+.sport-banner__header{
+    padding-bottom: 40px;
+}
+
+.sport-banner__subtitle {
+    color: #FFF;
+    font-family: "Zuume Cut";
+    font-size: 90px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 85.234%;
+    margin-bottom: 0;
+}
+
+.sport-banner__description {
+    color: #FFFFFF;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+.sport-banner__description p {
+    margin: 0;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.sport-banner__description-span{
+    color: #F8D905;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    max-width: 550px;
+}
+/* ===== Banner Section End ===== */
+
+/* ===== Product Grid Section Start ===== */
+.sport-products-section {
+    width: 100%;
+    padding: 0 0px 80px;
+}
+
+.sport-product-card {
+    display: flex;
+    height: 100%;
+}
+
+.sport-product-card__image{
+    width: 100%;
+    flex: 1;
+}
+
+.sport-product-card__content{
+    flex: 2;
+    width: 100%;
+}
+
+.sport-product-card__image img {
+    width: 100%;
+    object-fit: cover;
+    height: 720px;
+    transform: translateX(-20%) translateY(-8%) rotate(20deg);
+}
+
+.sport-product-card{
+    height: 400px;
+    overflow: hidden;
+}
+
+.sport-product-card__content {
+    align-content: center;
+}
+
+.sport-product-card__name {
+    color: #FFFFFF;
+    font-family: "Zuume Cut";
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+}
+
+.sport-product-card__description {
+    color: #FFFFFF;
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 360px;
+}
+
+/* Product Card Color Variants */
+.sport-product-card--orange {
+    background: linear-gradient(135deg, #FF7900 0%, #FFA500 100%);
+}
+
+.sport-product-card--original {
+    background: linear-gradient(117deg, #A30106 0%, #F00 100.02%);
+}
+
+.sport-product-card--cherry {
+    background: linear-gradient(117deg, #F27B00 0%, #FCC401 100.02%);
+}
+
+.sport-product-card--apple {
+    background: linear-gradient(117deg, #F27B00 0%, #FCC401 100.02%);
+}
+
+.sport-product-card--caribbean-crush {
+    background: linear-gradient(117deg, #F27B00 0%, #FCC401 100.02%);
+}
+
+.sport-product-card--zero-orange {
+    background: linear-gradient(135deg, #FF6B35 0%, #FF8C42 100%);
+}
+
+.sport-product-card--zero-pink-lemonade {
+    background: linear-gradient(135deg, #FFD700 0%, #FFE44D 100%);
+}
+
+.sport-product-card--zero-tropical {
+    background: linear-gradient(135deg, #FFD700 0%, #FFE44D 100%);
+}
+
+.sport-product-card--zero-original {
+    background: linear-gradient(135deg, #FFD700 0%, #FFE44D 100%);
+}   
+
+/* ===== Product Grid Section End ===== */
+
+.sport-product-card--blue-burst {
+    background: linear-gradient(135deg, #FFD700 0%, #FFE44D 100%);
+}
+
+/* ===== Responsive Design Start ===== */
+/* Tablet Responsive Design */
+@media (min-width: 769px) and (max-width: 1023px) {
+    .sport-banner-section {
+        padding: 80px 40px;
+        min-height: 500px;
+    }
+
+    .sport-banner__title {
+        font-size: 150px;
+    }
+
+    .sport-banner__subtitle {
+        font-size: 60px;
+    }
+
+    .sport-banner__description {
+        font-size: 15px;
+    }
+
+    .sport-products-section {
+        padding: 60px 40px;
+    }
+
+    .sport-product-card {
+        min-height: 380px;
+        padding: 35px;
+    }
+
+    .sport-product-card__image {
+        height: 220px;
+        margin-bottom: 25px;
+    }
+
+    .sport-product-card__name {
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+
+    .sport-product-card__description {
+        font-size: 13px;
+    }
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .sport-banner-section {
+        padding: 60px 20px;
+        min-height: auto;
+    }
+
+    .sport-banner__title {
+        font-size: 80px;
+        line-height: 85%;
+        text-align: center;
+    }
+
+    .sport-banner__subtitle {
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .sport-banner__description {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .sport-products-section {
+        padding: 40px 20px;
+    }
+
+    .sport-product-card {
+        min-height: 350px;
+        padding: 30px;
+    }
+
+    .sport-product-card__image {
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .sport-product-card__name {
+        font-size: 45px;
+        margin-bottom: 15px;
+    }
+
+    .sport-product-card__description {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 600px) {
+    .sport-banner-section {
+        padding: 40px 15px;
+    }
+
+    .sport-banner__title {
+        font-size: 65px;
+        line-height: 79%;
+        margin-bottom: 15px;
+    }
+
+    .sport-banner__subtitle {
+        font-size: 35px;
+        margin-bottom: 25px;
+    }
+
+    .sport-banner__description {
+        font-size: 13px;
+    }
+
+    .sport-products-section {
+        padding: 30px 15px;
+    }
+
+    .sport-product-card {
+        min-height: 320px;
+        padding: 25px;
+    }
+
+    .sport-product-card__image {
+        height: 180px;
+        margin-bottom: 15px;
+    }
+
+    .sport-product-card__name {
+        font-size: 40px;
+        margin-bottom: 12px;
+    }
+
+    .sport-product-card__description {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+}
+/* ===== Responsive Design End ===== */
+
+
+@media (max-width: 1199px) {
+    .sport-product-card__image img {
+      width: 100%;
+      height: 560px;
+      object-fit: cover;
+      transform: translateX(-20%) translateY(-8%) rotate(20deg);
+    }
+  }
+  
