@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero FAQ - Lucozade</title>
+    <!-- bootstrap CDN link start -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- bootstrap CDN link end -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- zuume font link start -->
+    <link href="https://fonts.cdnfonts.com/css/zuume" rel="stylesheet">
+    <!-- zuume font link end -->
+
+    <!-- common style start -->
+    <link rel="stylesheet" href="assets/css/common.css">
+    <!-- common style end -->
+
+    <!-- faq style start -->
+    <link rel="stylesheet" href="assets/css/faq.css">
+    <!-- faq style end -->
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="site-navbar">
+                <div class="site-navbar__logo">
+                    <a href="index.html">
+                        <img src="assets/images/header-logo.png" alt="Lucozade">
+                    </a>
+                    <div class="site-navbar__hamberug-icon" onclick="menuBtnFunction(this)">
+                        <span></span>
+                    </div>
+                </div>
+                <ul class="site-navbar__menu" id="mobileMenu">
+                    <li class="site-navbar__item"><a href="shop.html"
+                            style="text-decoration: none; color: inherit;">SHOP</a></li>
+                    <li class="site-navbar__item"><a href="range.html"
+                            style="text-decoration: none; color: inherit;">RANGES</a></li>
+                    <li class="site-navbar__item active"
+                        style="color: #FF1400; font-weight: 700; border-bottom: 2px solid #FF1400;"><a href="FAQ.html"
+                            style="text-decoration: none; color: inherit;">SUPPORT</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- FAQ Hero Section -->
+    <section class="faq-hero">
+        <div class="container">
+            <h1 class="faq-hero__title">FREQUENTLY<br>ASKED QUESTIONS</h1>
+            <p class="faq-hero__description">
+                Below are our most frequently asked questions about our Lucozade brands, use the tabs below to filter
+                per brand, or fill in the form to get in contact with us.
+            </p>
+
+            <div class="faq-tabs">
+                <a href="FAQ.html" class="faq-tab-btn" style="text-decoration: none;">ENERGY</a>
+                <a href="faq-sport.html" class="faq-tab-btn" style="text-decoration: none;">SPORT</a>
+                <a href="faq-zero.html" class="faq-tab-btn active" style="text-decoration: none;">ZERO</a>
+                <a href="faq-alert.html" class="faq-tab-btn" style="text-decoration: none;">ALERT</a>
+                <a href="faq-shop.html" class="faq-tab-btn" style="text-decoration: none;">SHOP</a>
+            </div>
+
+            <!-- FAQ Content Containers -->
+            <div class="faq-accordion-container">
+                <!-- Zero Tab -->
+                <div class="tab-content active" id="zero">
+                    <div class="faq-accordion">
+                        <!-- Q1 -->
+                        <div class="faq-item active">
+                            <button class="faq-question">
+                                Why have you made changes to the bottle caps?
+                                <span class="chevron">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>The sustainability of our packaging, and what happens to it when it's empty, is
+                                    hugely important to us. We design our packaging for circularity and the introduction
+                                    of tethered caps is our latest step towards making our drinks more sustainable.</p>
+                                <p>The caps on our bottles have always been recyclable, but these are often discarded
+                                    and therefore not recycled. This new change means that the cap stays attached to the
+                                    bottle after opening, reducing the potential for it to be littered. We are committed
+                                    to making sustainable changes to our packaging to help achieve a circular economy
+                                    for plastics.</p>
+                                <div class="feedback-section">
+                                    Did this answer your question?
+                                    <div class="feedback-icons">
+                                        <button class="feedback-btn" aria-label="Yes">👍</button>
+                                        <button class="feedback-btn" aria-label="No">👎</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Q2 -->
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                Why is there a combination of tethered and non-tethered caps still on shelves?
+                                <span class="chevron">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>We are transitioning our production lines to tethered caps. During this period, you
+                                    may see both types in stores as older stock is sold through.</p>
+                            </div>
+                        </div>
+                        <!-- Q3 -->
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                Were your bottle and caps not recyclable before?
+                                <span class="chevron">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>All Lucozade bottles and caps have been 100% recyclable for many years. The move to
+                                    tethered caps is simply to ensure they stay together to improve the collection and
+                                    recycling process.</p>
+                            </div>
+                        </div>
+                        <!-- Q4 -->
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                What is Lucozade Zero’s stance on artficial sweeteners?
+                                <span class="chevron">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>We use sweeteners to provide the same great taste without the sugar content.</p>
+                            </div>
+                        </div>
+                        <!-- Q5 -->
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                Where do I get my energy from if Lucozade Zero doesn’t have sugar?
+                                <span class="chevron">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>While Lucozade Zero does not provide energy from sugar, it is designed to be a
+                                    refreshing, sugar-free alternative for those who want the Lucozade taste without the
+                                    calories.</p>
+                            </div>
+                        </div>
+                        <!-- Q6 -->
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                Why is Lucozade Zero called Zero when it has 4 calories?
+                                <span class="chevron">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Legally, a product can be called 'Zero' sugar if it contains less than 0.5g of sugar
+                                    per 100ml. The small amount of calories comes from the other ingredients used to
+                                    create the flavor.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Social CTA Sections -->
+    <section class="cta-sections">
+        <div class="contact-cta">
+            <div class="container">
+                <div class="contact-cta__flex">
+                    <div class="contact-cta__text">
+                        <h2 class="contact-cta__title">CONTACT US</h2>
+                        <p class="contact-cta__subtitle">How can we help?</p>
+                    </div>
+                    <a href="#" class="contact-cta__btn">GET IN TOUCH</a>
+                </div>
+            </div>
+        </div>
+        <div class="social-cta">
+            <div class="container">
+                <div class="social-cta__flex">
+                    <h2 class="social-cta__title">SHOP, FOLLOW & JOIN</h2>
+                    <div class="social-cta__icons">
+                        <a href="#"><img src="assets/images/cta-icon-instagram.png" alt="Instagram"></a>
+                        <a href="#"><img src="assets/images/cta-icon-tiktok.png" alt="TikTok"></a>
+                        <a href="#"><img src="assets/images/cta-icon-email.png" alt="Email"></a>
+                        <a href="#"><img src="assets/images/cta-icon-cart.png" alt="Cart"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="site-footer__container">
+                <div class="site-footer__main">
+                    <div class="site-footer__logo">
+                        <img src="assets/images/header-logo.png" alt="Lucozade Logo">
+                    </div>
+                    <ul class="site-footer__menu">
+                        <li class="site-footer__item">CONTACT US</li>
+                        <li class="site-footer__item">TERMS OF USE</li>
+                        <li class="site-footer__item">COOKIES</li>
+                        <li class="site-footer__item">PRIVACY POLICY</li>
+                        <li class="site-footer__item">SITEMAP</li>
+                    </ul>
+                </div>
+
+                <div class="site-footer__partners">
+                    <h3 class="site-footer__title">Lucozade Sport is proud to work with the following partners:</h3>
+                    <div>
+                        <ul class="site-footer__brands">
+                            <li class="site-footer__brand">
+                                <img src="assets/images/footer-partner-fa.png" alt="The FA">
+                            </li>
+                            <li class="site-footer__brand">
+                                <img src="assets/images/footer-partner-tcslm.png" alt="TCS London Marathon">
+                            </li>
+                            <li class="site-footer__brand">
+                                <img src="assets/images/footer-partner-liverpool.png" alt="Liverpool FC">
+                            </li>
+                            <li class="site-footer__brand">
+                                <img src="assets/images/footer-partner-powerleague.png" alt="Powerleague">
+                            </li>
+                            <li class="site-footer__brand">
+                                <img src="assets/images/footer-partner-goals.png" alt="Goals">
+                            </li>
+                            <li class="site-footer__brand">
+                                <img src="assets/images/footer-partner-bournemouth.png" alt="AFC Bournemouth">
+                            </li>
+                            <li class="site-footer__brand">
+                                <img src="assets/images/footer-partner-brentford.png" alt="Brentford FC">
+                            </li>
+                            <li class="site-footer__brand">
+                                <img src="assets/images/footer-partner-brighton.png" alt="Brighton & Hove Albion">
+                            </li>
+                            <li class="site-footer__brand">
+                                <img src="assets/images/footer-partner-sunderland.png" alt="Sunderland AFC">
+                            </li>
+                            <li class="site-footer__brand">
+                                <img src="assets/images/footer-partner-norwich.png" alt="Norwich City FC">
+                            </li>
+                            <li class="site-footer__brand">
+                                <img src="assets/images/footer-partner-sheffield.png" alt="Sheffield United FC">
+                            </li>
+                            <li class="site-footer__brand">
+                                <img src="assets/images/footer-partner-southampton.png" alt="Southampton FC">
+                            </li>
+                            <li class="site-footer__brand">
+                                <img src="assets/images/footer-partner-rangers.png" alt="Rangers FC">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="site-footer__description">©Lucozade Ribena Suntory Limited, 2025 All rights reserved.
+                    LUCOZADE,
+                    the LUCOZADE ranges, and the Arc Device are registered trade marks of Lucozade Ribena Suntory
+                    Limited.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/homepage.js"></script>
+    <script src="assets/js/faq.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
