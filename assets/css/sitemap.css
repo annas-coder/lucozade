@@ -28,6 +28,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
+    place-items: center;
+    align-items: flex-start;
 }
 
 .sitemap-column {
