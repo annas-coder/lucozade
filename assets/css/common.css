@@ -609,3 +609,17 @@
 }
 
 /* ===== Call to Action Section End ===== */
+
+/* ===== Anchor Link Styles Start ===== */
+/* Navigation and Footer Link Styles */
+.site-navbar__item a,
+.site-footer__item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* FAQ Tab Button Styles */
+.faq-tab-btn {
+    text-decoration: none;
+}
+/* ===== Anchor Link Styles End ===== */

@@ -25,7 +25,6 @@
     line-height: 1.5;
     margin-bottom: 60px;
     font-weight: 400;
-    /* Adjusted to Regular */
     color: #FFFFFF;
 }
 
@@ -143,7 +142,6 @@
     color: #666;
     font-size: 0.8rem;
     font-weight: 400;
-    /* Adjusted to Regular */
     margin-top: 5px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }

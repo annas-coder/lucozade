@@ -1,7 +1,10 @@
 /* assets/css/contact.css */
 
-.contact-hero {
+.contact-wrapper{
     background: linear-gradient(135deg, #ef0000 0%, #ff8c00 100%);
+}
+
+.contact-hero {
     padding: 80px 0;
     min-height: 400px;
     display: flex;
@@ -28,7 +31,6 @@
 }
 
 .contact-form-section {
-    background: linear-gradient(135deg, #ef0000 0%, #ff8c00 100%);
     padding: 60px 0 100px;
 }
 
@@ -125,9 +127,7 @@ textarea.form-control {
 
 .file-upload-btn {
     background-color: #e9e9e9 !important;
-    /* Slightly darker gray to not look white */
     color: #000000 !important;
-    /* Force black text */
     padding: 8px 18px;
     border-radius: 8px;
     cursor: pointer;
@@ -177,7 +177,6 @@ textarea.form-control {
     width: 30px;
     height: 30px;
     border-radius: 10px !important;
-    /* Rounded square */
     background-color: #fff;
     border: none;
     margin-top: 0;
@@ -207,7 +206,6 @@ textarea.form-control {
     color: #ec0000;
     padding: 12px 80px;
     border-radius: 0;
-    /* Pure rectangle */
     font-family: "Zuume Cut", sans-serif;
     font-size: 28px;
     font-weight: 700;
