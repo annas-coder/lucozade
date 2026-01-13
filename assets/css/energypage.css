@@ -121,8 +121,32 @@
 .sport-product-card__image img {
     width: 100%;
     object-fit: cover;
-    height: 720px;
+    height: 600px;
     transform: translateX(-20%) translateY(-8%) rotate(20deg);
+}
+
+.product-selector-section--alert{
+    padding: 80px 0 0;
+}
+
+.product-selector__button-description{
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.sport-range-wrapper--alert .product-selector__button {
+    height: 210px;
+}
+
+.sport-range-wrapper--alert .product-selector__button-text{
+    font-size: 40px;
+    width: 342px;
+    margin: 0 auto;
 }
 
 .sport-product-card__content {
@@ -206,6 +230,26 @@
 .sport-product-card--zero-tropical {
     background: var(--EnergyTropicalZero, linear-gradient(140deg, #FFF 0%, #C6EC5C 30%, #53B42D 100%));
 }
+
+.alert-product-card--orange {
+    background: var(--EnergyOriginal, linear-gradient(316deg, #F00 0%, #A30106 100%));
+}
+
+.alert-product-card--cherry-blast{
+    background: var(--AlertCherryBlast, linear-gradient(117deg, #D93A7E 0%, #AE2348 100.02%));
+} 
+
+.alert-product-card--tropical-burst{
+    background: var(--AlertTropicalBurst, linear-gradient(117deg, #F8C23A 0%, #E7951E 100.02%));
+} 
+
+.alert-product-card--mango-peachade-zero{
+    background: var(--AlertMangoPeachZero, linear-gradient(117deg, #FFF 0%, #FBC438 30.01%, #CA1612 70.02%));
+} 
+
+.alert-product-card--blue-rush{
+    background: var(--Alert_Blue-Rush, linear-gradient(117deg, #2E98B9 0%, #020789 100.02%));
+} 
 /* ===== Product Grid Section End ===== */
 
 /* ===== Ranges Banner Section Start ===== */
@@ -224,6 +268,18 @@
 }
 
 .ranges-banner__text {
+.alert-product-card--zero-original {
+    background: var(--EnergyOriginalZero, linear-gradient(140deg, #FFF 0%, #F00 30%, #A30106 70%));
+}
+
+.alert-product-card--zero-pink-lemonade {
+    background: var(--EnergyPinkZero, linear-gradient(140deg, #FFF 0%, #FBAFD1 30%, #F95699 70%));
+}
+
+.alert-product-card--zero-tropical {
+    background: var(--EnergyTropicalZero, linear-gradient(140deg, #FFF 0%, #C6EC5C 30%, #53B42D 100%));
+}
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -315,11 +371,11 @@
     }
 
     .ranges-banner__word {
-        font-size: 45px;
+        font-size: 30px;
     }
 
     .ranges-banner__yellow-section {
-        padding: 25px 0;
+        padding: 12px 0;
     }
 
     .sport-banner-section {
@@ -452,9 +508,13 @@
 @media (max-width: 1199px) {
     .sport-product-card__image img {
         width: 100%;
-        height: 490px;
+        height: 430px;
         object-fit: cover;
-        transform: translateX(-20%) translateY(-8%) rotate(20deg);
+        transform: translateX(-28%) translateY(0%) rotate(18deg);
+    }
+
+    .sport-product-card__image{
+        flex: 2;
     }
 
     .sport-range-wrapper--energy::after,
