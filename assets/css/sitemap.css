@@ -1,0 +1,100 @@
+/* assets/css/sitemap.css */
+
+.sitemap-hero {
+    background-color: #FF1400;
+    padding: 80px 0;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.sitemap-hero__title {
+    font-family: "Zuume Cut", sans-serif;
+    font-size: 100px;
+    font-weight: 900;
+    font-style: italic;
+    color: #F8D905;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.sitemap-content {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.sitemap-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.sitemap-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sitemap-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sitemap-item {
+    margin-bottom: 10px;
+}
+
+.sitemap-item>a {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sitemap-item>a:hover {
+    color: #FF1400;
+}
+
+.sitemap-sublist {
+    list-style: none;
+    padding-left: 30px;
+    margin-top: 10px;
+}
+
+.sitemap-subitem {
+    margin-bottom: 8px;
+}
+
+.sitemap-subitem a {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sitemap-subitem a:hover {
+    color: #FF1400;
+}
+
+/* Underline for active menu item */
+.site-navbar__item.active a {
+    text-decoration: underline !important;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px !important;
+}
+
+@media (max-width: 768px) {
+    .sitemap-hero__title {
+        font-size: 60px;
+    }
+
+    .sitemap-grid {
+        grid-template-columns: 1fr;
+    }
+}

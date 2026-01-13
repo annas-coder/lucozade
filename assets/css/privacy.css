@@ -1,0 +1,136 @@
+/* Privacy Page Styles */
+.privacy-hero {
+    background: linear-gradient(135deg, #fe1401 0%, #ff7f0f 100%);
+    padding: 100px 0 60px;
+    color: white;
+}
+
+.privacy-hero__title {
+    font-family: "Zuume Cut", sans-serif;
+    font-size: clamp(3.2rem, 9vw, 8rem);
+    font-weight: 700;
+    font-style: italic;
+    line-height: 0.82;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: -1.5px;
+    color: #FFF200;
+}
+
+.privacy-content {
+    background: white;
+    padding: 80px 0;
+}
+
+.privacy-text {
+    font-family: "Poppins", sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.privacy-text p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    color: #444;
+}
+
+.privacy-text h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 60px;
+    margin-bottom: 25px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.privacy-text ol {
+    margin-bottom: 35px;
+    padding-left: 20px;
+}
+
+.privacy-text ol li {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.privacy-text ul {
+    margin-bottom: 25px;
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+.privacy-text ul li {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    color: #444;
+    position: relative;
+    padding-left: 15px;
+}
+
+.privacy-text ul li::before {
+    content: "-";
+    position: absolute;
+    left: 0;
+}
+
+.privacy-text a {
+    color: #fe1401;
+    text-decoration: underline;
+}
+
+/* Privacy Table Styles */
+.privacy-table-wrapper {
+    overflow-x: auto;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.privacy-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    font-family: "Poppins", sans-serif;
+    min-width: 1000px;
+}
+
+.privacy-table th,
+.privacy-table td {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: left;
+    vertical-align: top;
+    line-height: 1.6;
+}
+
+.privacy-table th {
+    background-color: #f8f8f8;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: #000;
+}
+
+.privacy-table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .privacy-hero {
+        padding: 60px 0 40px;
+        text-align: center;
+    }
+
+    .privacy-text {
+        padding: 0 20px;
+    }
+
+    .privacy-text h2 {
+        font-size: 1.3rem;
+        margin-top: 40px;
+    }
+}

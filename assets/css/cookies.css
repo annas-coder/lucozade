@@ -1,0 +1,259 @@
+/* Cookies Page Styles */
+.cookies-hero {
+    background: linear-gradient(135deg, #fe1401 0%, #ff7f0f 100%);
+    padding: 100px 0 60px;
+    color: white;
+}
+
+.cookies-hero__title {
+    font-family: "Zuume Cut", sans-serif;
+    font-size: clamp(3.5rem, 10vw, 8rem);
+    font-weight: 700;
+    font-style: italic;
+    line-height: 0.82;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: -1.5px;
+    color: #FFF200;
+}
+
+.cookies-content {
+    background: white;
+    padding: 80px 0;
+}
+
+.cookies-text {
+    font-family: "Poppins", sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cookies-text p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    color: #444;
+}
+
+.cookies-text h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 60px;
+    margin-bottom: 25px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.cookies-text ol,
+.cookies-text ul {
+    margin-bottom: 25px;
+    padding-left: 20px;
+}
+
+.cookies-text li {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #444;
+}
+
+.cookies-text ul li {
+    margin-bottom: 15px;
+    list-style-type: disc;
+}
+
+.cookies-text a {
+    color: #fe1401;
+    text-decoration: underline;
+}
+
+.cookies-table-wrapper {
+    overflow-x: auto;
+    margin-bottom: 40px;
+}
+
+.cookies-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.cookies-table th,
+.cookies-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.cookies-table th {
+    background-color: #f8f8f8;
+    font-weight: 700;
+}
+
+.cookies-table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+/* Cookie Management UI */
+.cookie-manage-list {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.cookie-manage-item {
+    padding-bottom: 25px;
+}
+
+.cookie-manage-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.cookie-manage-header h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0;
+    color: #000;
+}
+
+.cookie-manage-header .cookie-ids {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #888;
+    text-align: right;
+    margin-right: 15px;
+    flex: 1;
+}
+
+.cookie-manage-item p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 0;
+    max-width: 80%;
+}
+
+/* Toggle Switch Styling */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #e0e0e0;
+    transition: .4s;
+    border-radius: 24px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #fe1401;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #fe1401;
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+input:disabled+.slider {
+    background-color: #f1f1f1;
+    cursor: not-allowed;
+}
+
+/* Cookie Action Buttons */
+.cookie-actions {
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.btn-cookie-action {
+    background: #FFF200;
+    border: none;
+    color: #FF1400;
+    font-family: "Zuume Cut", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 200px;
+    border-radius: 4px;
+}
+
+.btn-cookie-action:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(255, 242, 0, 0.4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .cookie-manage-header {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .cookie-manage-header .cookie-ids {
+        text-align: left;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .cookie-manage-item p {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .cookie-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .cookies-hero {
+        padding: 60px 0 40px;
+        text-align: center;
+    }
+
+    .cookies-text {
+        padding: 0 20px;
+    }
+
+    .cookies-text h2 {
+        font-size: 1.3rem;
+        margin-top: 40px;
+    }
+}

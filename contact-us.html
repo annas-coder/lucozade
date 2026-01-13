@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Lucozade</title>
+    <!-- favicon start -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/lucozade-favicon.svg">
+    <link rel="shortcut icon" href="assets/images/lucozade-favicon.svg">
+    <!-- favicon end -->
+
+    <!-- bootstrap CDN link start -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap CDN link end -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- zuume font link start -->
+    <link href="https://fonts.cdnfonts.com/css/zuume" rel="stylesheet">
+    <!-- zuume font link end -->
+
+    <!-- common style start -->
+    <link rel="stylesheet" href="assets/css/common.css">
+    <!-- common style end -->
+
+    <!-- contact style start -->
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <!-- contact style end -->
+
+    <!-- faq style start (for social-cta) -->
+    <link rel="stylesheet" href="assets/css/faq.css">
+    <!-- faq style end -->
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container px-0">
+            <div class="site-navbar">
+                <div class="site-navbar__logo">
+                    <a href="index.html">
+                        <img src="assets/images/header-logo.png" alt="Lucozade">
+                    </a>
+                    <div class="site-navbar__hamberug-icon" onclick="menuBtnFunction(this)">
+                        <span></span>
+                    </div>
+                </div>
+                <ul class="site-navbar__menu" id="mobileMenu">
+                    <li class="site-navbar__item"><a href="shop.html"
+                            style="text-decoration: none; color: inherit;">SHOP</a></li>
+                    <li class="site-navbar__item"><a href="range.html"
+                            style="text-decoration: none; color: inherit;">RANGES</a></li>
+                    <li class="site-navbar__item active"><a href="FAQ.html"
+                            style="text-decoration: none; color: inherit;">SUPPORT</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1 class="contact-hero__title">CONTACT US</h1>
+            <p class="contact-hero__subtitle">How can we help?</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <h2 class="contact-form__title">TELL US ABOUT YOU</h2>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="reason">Please select your reason for contacting us? *</label>
+                    <select class="form-select" id="reason" required>
+                        <option value="" selected>[Select]</option>
+                        <option value="feedback">Product Feedback</option>
+                        <option value="inquiry">General Inquiry</option>
+                        <option value="complaint">Complaint</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="title">Title: *</label>
+                    <select class="form-select" id="title" required>
+                        <option value="" selected>Dropdown option</option>
+                        <option value="mr">Mr</option>
+                        <option value="mrs">Mrs</option>
+                        <option value="ms">Ms</option>
+                        <option value="miss">Miss</option>
+                        <option value="dr">Dr</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="forename">Forename: *</label>
+                    <input type="text" class="form-control" id="forename" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="surname">Surname: *</label>
+                    <input type="text" class="form-control" id="surname" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email: *</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Daytime telephone: *</label>
+                    <input type="tel" class="form-control" id="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mobile">Mobile phone number:</label>
+                    <input type="tel" class="form-control" id="mobile">
+                </div>
+
+                <h2 class="contact-form__title mt-5">CONTACT DETAILS</h2>
+
+                <div class="form-group">
+                    <label for="address">House No & Street: *</label>
+                    <input type="text" class="form-control" id="address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address2">Other address information:</label>
+                    <input type="text" class="form-control" id="address2">
+                </div>
+
+                <div class="form-group">
+                    <label for="town">Town: *</label>
+                    <input type="text" class="form-control" id="town" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="county">County:</label>
+                    <input type="text" class="form-control" id="county">
+                </div>
+
+                <div class="form-group">
+                    <label for="postcode">Postcode: *</label>
+                    <input type="text" class="form-control" id="postcode" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="country">Country:</label>
+                    <select class="form-select" id="country">
+                        <option value="" selected>[Select]</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="ireland">Ireland</option>
+                    </select>
+                </div>
+
+                <h2 class="contact-form__title mt-5">COMMENTS / QUESTIONS *</h2>
+
+                <div class="form-group">
+                    <label for="comments">Email subscriptions</label>
+                    <textarea class="form-control h-auto" id="comments" rows="5" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="attachment">Attach file</label>
+                    <div class="file-upload-wrapper">
+                        <label for="attachment" class="file-upload-btn">Choose file</label>
+                        <span id="file-chosen">No file chosen</span>
+                        <input type="file" id="attachment" hidden>
+                    </div>
+                    <small class="form-text text-white">Files must be JPG PNG GIF and less than 5mb</small>
+                </div>
+
+                <h2 class="contact-form__title mt-5">EMAIL SUBSCRIPTIONS</h2>
+
+                <p class="subscription-disclaimer">I consent to receive email marketing communications from Ribena about
+                    their products, services, promotions and events. I understand that I can withdraw my consent at any
+                    time as indicated in each marketing message. Ribena will handle my personal data in accordance with
+                    its privacy policy.</p>
+
+                <div class="subscription-checkboxes">
+                    <div class="form-check custom-check">
+                        <input class="form-check-input" type="checkbox" id="brand-lucozade">
+                        <label class="form-check-label" for="brand-lucozade">Lucozade</label>
+                    </div>
+                    <div class="form-check custom-check">
+                        <input class="form-check-input" type="checkbox" id="brand-energy">
+                        <label class="form-check-label" for="brand-energy">Lucozade Energy</label>
+                    </div>
+                    <div class="form-check custom-check">
+                        <input class="form-check-input" type="checkbox" id="brand-sport">
+                        <label class="form-check-label" for="brand-sport">Lucozade Sport</label>
+                    </div>
+                    <div class="form-check custom-check">
+                        <input class="form-check-input" type="checkbox" id="brand-alert">
+                        <label class="form-check-label" for="brand-alert">Lucozade Alert</label>
+                    </div>
+                    <div class="form-check custom-check">
+                        <input class="form-check-input" type="checkbox" id="brand-zero">
+                        <label class="form-check-label" for="brand-zero">Lucozade Zero</label>
+                    </div>
+                </div>
+
+                <div class="form-group mt-4">
+                    <label>Please tick *</label>
+                    <div class="form-check custom-check">
+                        <input class="form-check-input" type="checkbox" id="privacy-policy" required>
+                        <label class="form-check-label" for="privacy-policy">I have read and understood the Privacy
+                            Policy</label>
+                    </div>
+                </div>
+
+                <div class="form-submit mt-5 text-center">
+                    <button type="submit" class="submit-btn text-uppercase">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Social CTA Section -->
+    <section class="cta-sections">
+        <div class="social-cta">
+            <div class="container">
+                <div class="social-cta__flex">
+                    <h2 class="social-cta__title">SHOP, FOLLOW & JOIN</h2>
+                    <div class="social-cta__icons">
+                        <a href="#"><img src="assets/images/cta-icon-instagram.png" alt="Instagram"></a>
+                        <a href="#"><img src="assets/images/cta-icon-tiktok.png" alt="TikTok"></a>
+                        <a href="#"><img src="assets/images/cta-icon-email.png" alt="Email"></a>
+                        <a href="#"><img src="assets/images/cta-icon-cart.png" alt="Cart"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="site-footer__container">
+                <div class="site-footer__main">
+                    <div class="site-footer__logo">
+                        <img src="assets/images/header-logo.png" alt="Lucozade Logo">
+                    </div>
+                    <ul class="site-footer__menu">
+                        <li class="site-footer__item"><a href="contact-us.html"
+                                style="text-decoration: none; color: inherit;">CONTACT US</a></li>
+                        <li class="site-footer__item"><a href="terms-of-use.html"
+                                style="text-decoration: none; color: inherit;">TERMS OF USE</a></li>
+                        <li class="site-footer__item"><a href="cookies.html"
+                                style="text-decoration: none; color: inherit;">COOKIES</a></li>
+                        <li class="site-footer__item"><a href="privacy-policy.html"
+                                style="text-decoration: none; color: inherit;">PRIVACY POLICY</a></li>
+                        <li class="site-footer__item"><a href="site-map.html"
+                                style="text-decoration: none; color: inherit;">SITEMAP</a></li>
+                    </ul>
+                </div>
+
+                <div class="site-footer__partners">
+                    <h3 class="site-footer__title">Lucozade Sport is proud to work with the following partners:</h3>
+                    <div>
+                        <ul class="site-footer__brands">
+                            <li class="site-footer__brand">
+                                <img src="assets/images/footer-partner-fa.png" alt="The FA">
+                            </li>
+                            <li class="site-footer__brand">
+                                <img src="assets/images/footer-partner-tcslm.png" alt="TCS London Marathon">
+                            </li>
+                            <li class="site-footer__brand">
+                                <img src="assets/images/footer-partner-liverpool.png" alt="Liverpool FC">
+                            </li>
+                            <li class="site-footer__brand">
+                                <img src="assets/images/footer-partner-powerleague.png" alt="Powerleague">
+                            </li>
+                            <li class="site-footer__brand">
+                                <img src="assets/images/footer-partner-goals.png" alt="Goals">
+                            </li>
+                            <li class="site-footer__brand">
+                                <img src="assets/images/footer-partner-bournemouth.png" alt="AFC Bournemouth">
+                            </li>
+                            <li class="site-footer__brand">
+                                <img src="assets/images/footer-partner-brentford.png" alt="Brentford FC">
+                            </li>
+                            <li class="site-footer__brand">
+                                <img src="assets/images/footer-partner-brighton.png" alt="Brighton &amp; Hove Albion">
+                            </li>
+                            <li class="site-footer__brand">
+                                <img src="assets/images/footer-partner-sunderland.png" alt="Sunderland AFC">
+                            </li>
+                            <li class="site-footer__brand">
+                                <img src="assets/images/footer-partner-norwich.png" alt="Norwich City FC">
+                            </li>
+                            <li class="site-footer__brand">
+                                <img src="assets/images/footer-partner-sheffield.png" alt="Sheffield United FC">
+                            </li>
+                            <li class="site-footer__brand">
+                                <img src="assets/images/footer-partner-southampton.png" alt="Southampton FC">
+                            </li>
+                            <li class="site-footer__brand">
+                                <img src="assets/images/footer-partner-rangers.png" alt="Rangers FC">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="site-footer__description">©Lucozade Ribena Suntory Limited, 2025 All rights reserved.
+                    LUCOZADE,
+                    the LUCOZADE ranges, and the Arc Device are registered trade marks of Lucozade Ribena Suntory
+                    Limited.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function menuBtnFunction(x) {
+            x.classList.toggle("active");
+            document.getElementById("mobileMenu").classList.toggle("active");
+        }
+
+        const actualBtn = document.getElementById('attachment');
+        const fileChosen = document.getElementById('file-chosen');
+        actualBtn.addEventListener('change', function () {
+            fileChosen.textContent = this.files[0].name
+        })
+    </script>
+</body>
+
+</html>
